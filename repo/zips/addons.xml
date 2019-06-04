@@ -15,8 +15,8 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.livestreamspro"
-       name="Live Streams Pro"
+<addon id="plugin.video.live.streamspro"
+       name="Live Streams Pro +"
        version="3.5.1"
        provider-name="cttynul, Shani, divingmule">
   <requires>
@@ -28,10 +28,10 @@
     <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.resolveurl"/>
     <import addon="script.module.simplejson" />
     <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.slproxy"/>
     <import addon="script.module.pyamf" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -40,7 +40,7 @@
   <extension point="xbmc.service" library="service.py" start="login|startup"/>
 
   <extension point="xbmc.addon.metadata">
-    <summary>Live Streams Pro, shamelessly a fork of a fork, livestreams originally developed by divingmule first and Shani later</summary>
+    <summary>Live Streams Pro +, shamelessly a fork of a fork, livestreams originally developed by divingmule first and Shani later</summary>
     <description>
         This can just do what Live Streams Pro could do, but with some new cool features.
         For more info check documentation page at url: -- soon there will be something here --
@@ -91,24 +91,19 @@
 <addon id="repository.xbmcttynul" name="XBMCttynul Repository" version="1.18.2" provider-name="cttynul">
     <extension point="xbmc.addon.repository" name="XBMCttynul Repository">
       <dir>
-            <info compressed="false">https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/addons.xml</info>
-            <checksum>https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/</datadir>
-      </dir>
-      <dir>
-            <info compressed="false">https:/github.com/kodiondemand/repo/raw/master/addons.xml</info>
-            <checksum>https:/github.com/kodiondemand/repo/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https:/github.com/kodiondemand/repo/raw/master</datadir>
+            <info compressed="false">https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/addons.xml</info>
+            <checksum>https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/</datadir>
       </dir>
       <dir>
             <info compressed="false">https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
-            <checksum>https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+            <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
       </dir>
       <dir>
             <info compressed="false">https:/raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https:/raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https:/raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
       </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

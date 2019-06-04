@@ -48,13 +48,13 @@ elif mode==500:
         installer.wizard(name, url, addon.getSetting("save_location_addon"))
 
 elif mode==501:
-    name = "plugin.video.livestreamspro"
-    url="https://github.com/cttynul/plugin.video.livestreamspro/archive/master.zip"
+    name = "plugin.video.live.streamspro"
+    url="https://github.com/cttynul/plugin.video.live.streamspro/archive/master.zip"
     installer.wizard(name, url, addon.getSetting("save_location_addon"))
 
 elif mode==502:
-    name = "plugin.video.f4mtester"
-    url="https://github.com/cttynul/plugin.video.f4mtester/archive/master.zip"
+    name = "plugin.video.f4mTester"
+    url="https://github.com/cttynul/plugin.video.f4mTester/archive/master.zip"
     installer.wizard(name, url, addon.getSetting("save_location_addon"))
 
 elif mode==503:
