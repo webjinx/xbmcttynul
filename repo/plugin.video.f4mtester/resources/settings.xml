@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Settings">
+        <setting label="Proxy Configuration" type="lsep"/>
+        <setting id="bbcBitRateMax" label="Max Proxy Bitrate [800|1500|2200|3700]" type="text" default="800" values=""/>
+        <setting id="reload_channel" type="bool" label="Automatically reaload channel if stops" default="true"  />                          
+     </category>
+</settings>

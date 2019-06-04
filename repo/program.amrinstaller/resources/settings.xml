@@ -1,0 +1,50 @@
+<settings>
+
+<category label="Addon">
+  <setting type="lsep" label="Settings"/>
+  <setting id="save_location_addon" type="folder" label="Download Path" default=""/>
+  <setting id="download_user" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=500)" label="Download from an url" />   
+  <setting type="lsep" label="Sponsored Addons"/>
+  <setting id="download_kodr" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=504)" label="Kodi on Demand - plugin.video.kod" /> 
+  <setting id="download_lspro" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=501)" label="Live Streams Pro (cttynul fork) - plugin.video.livestreams.pro" />
+  <setting id="download_f4m" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=502)" label="F4M Proxy (cttynul fork) - plugin.video.f4mtester" />
+  <setting id="download_vvvvid" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=503)" label="VVVVID (cttynul fork) - plugin.video.vvvvid" />
+  <setting type="lsep" label="Addons"/>
+  <setting id="download_netflixr" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=505)" label="Netflix - plugin.video.netflix" />   
+  <setting id="download_raitv" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=521)" label="Rai on Demand - plugin.video.raitv" />   
+  <setting id="download_mplay" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=522)" label="Mediasey Play - plugin.video.mediasetplay" />   
+  <setting id="download_rivla7" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=523)" label="Rivedi La7 - plugin.video.rivedila7" />   
+  <setting id="download_dplay" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=524)" label="DPlay - plugin.video.dplay" />   
+  <setting id="download_plexus" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=525)" label="Plexus - program.plexus" />   
+</category>
+
+<category label="Repository">
+  <setting type="lsep" label="Settings"/>
+  <setting id="save_location_addon" type="folder" label="Download Path" default=""/>
+  <setting id="download_user" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=500)" label="Download from an url" />   
+  <setting type="lsep" label="Repositories"/>
+  <setting id="download_kod" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=506)" label="Kodi on Demand - repository.kod" />
+  <setting id="download_netflix" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=507)" label="Netflix - repository.castagnait" />
+  <setting id="download_avod" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=508)" label="Amazon Prime Video - repository.sandmann79.plugins" />
+  <setting id="download_nevwise" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=511)" label="DPlay - repository.neverwise" />
+  <setting id="download_conf" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=509)" label="A Confluence Zeitgeist - repository.axbmcuser" />
+  <setting id="download_kodil" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=510)" label="Kodil Macro Repository - repository.kodil" /> 
+</category>
+
+<category label="Module">
+  <setting type="lsep" label="Settings"/>
+  <setting id="save_location_addon" type="folder" label="Download Path" default=""/>
+  <setting id="download_user" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=500)" label="Download from an url" />   
+  <setting type="lsep" label="Module"/>
+  <setting id="download_us" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=512)" label="URL Resolver - script.module.urlresolver" />
+  <setting id="download_urs" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=513)" label="Resolve URL - script.module.resolveurl" />
+  <setting id="download_livres" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=514)" label="Live Resolver - script.module.liveresolver" /> 
+  <setting id="download_slcr" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=515)" label="Streamlink Crypto - script.module.streamlink.crypto" /> 
+  <setting id="download_slplug" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=516)" label="Streamlink Plugins - script.module.streamlink.plugins" /> 
+  <setting id="download_slbase" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=517)" label="Streamlink Base - script.module.streamlink.base" /> 
+  <setting id="download_httlib" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=518)" label="HTML5 Lib - script.module.html5lib" /> 
+  <setting id="download_f4mpro" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=519)" label="F4M Proxy (Legacy) - script.video.F4mProxy" /> 
+  <setting id="download_f4mtest" type="action" action="RunPlugin(plugin://program.amrinstaller/?mode=520)" label="F4M Tester (Legacy) - plugin.video.f4mTester" />   
+</category>
+
+</settings>

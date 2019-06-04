@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.xbmcttynul" name="XBMCttynul Repository" version="1.18.2" provider-name="cttynul">
+    <extension point="xbmc.addon.repository" name="XBMCttynul Repository">
+      <dir>
+            <info compressed="false">https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/addons.xml</info>
+            <checksum>https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https:/raw.githubusercontent.com/cttynul/xbmcttynul/master/repo/zips/</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https:/github.com/kodiondemand/repo/raw/master/addons.xml</info>
+            <checksum>https:/github.com/kodiondemand/repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https:/github.com/kodiondemand/repo/raw/master</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+            <checksum>https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https:/raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https:/raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https:/raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install all addons developed and provided by cttynul</summary>
+        <description>All addons you can download here are developed, forked, or contribueted by cttyul, utilities and dipendecies included, they are directly linked to official developer repository (TVA Resolvers and JSergio).</description>
+        <platform>all</platform>
+    </extension>
+</addon>
