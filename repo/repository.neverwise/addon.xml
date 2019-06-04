@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.neverwise" name="NeverWise Kodi repository" version="1.0.0" provider-name="NeverWise">
+  <extension point="xbmc.addon.repository" name="NeverWise Kodi repository">
+    <info compressed="true">https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons/addons.xml</info>
+    <checksum>https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons/addons.xml.md5</checksum>
+    <datadir zip="true">https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="it">Installa componenti aggiuntivi per Kodi dal NeverWise repository.</summary>
+    <summary lang="en">Install add-ons from NeverWise Kodi repository.</summary>
+    <description lang="it">Scarica e installa componenti aggiuntivi per Kodi dal NeverWise repository.</description>
+    <description lang="en">Download and install add-ons from NeverWise Kodi repository.</description>
+    <disclaimer lang="it">Alcune parti di questo addon potrebbero non essere legali nel tuo paese di residenza. Si prega di verificare la legislazione in vigore prima di installare.</disclaimer>
+    <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence. Please check with your local laws before installing.</disclaimer>
+    <language>it</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>

@@ -7,16 +7,6 @@
             <datadir zip="true">https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/</datadir>
       </dir>
       <dir>
-            <info compressed="true">https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons/addons.xml</info>
-            <checksum>https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/NeverWise/repository.neverwise-storage/raw/master/addons</datadir>
-      </dir>
-      <dir>
-            <info>https://github.com/kodiondemand/repo/raw/master/addons.xml</info>
-            <checksum>https://github.com/kodiondemand/repo/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/kodiondemand/repo/raw/master</datadir>
-      </dir>
-      <dir>
             <info compressed="false">https:/github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
             <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
