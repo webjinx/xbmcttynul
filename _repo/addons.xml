@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.f4mTester" name="F4M Proxy" version="3.5.0" provider-name="cttynul, Shani">
+    <requires>
+	<import addon="script.module.requests" />
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>F4M Links Streamer</summary>
+        <description>F4M Proxy is a fork of F4MTester with F4M Proxy integrated, both originally developed by Shani.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.livestreamspro"
+       name="Live Streams Pro"
+       version="3.5.1"
+       provider-name="cttynul, Shani, divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup"/>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Live Streams Pro, shamelessly a fork of a fork, livestreams originally developed by divingmule first and Shani later</summary>
+    <description>
+        This can just do what Live Streams Pro could do, but with some new cool features.
+        For more info check documentation page at url: -- soon there will be something here --
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.vvvvid" version="1.18.4" name="VVVVID" provider-name="cttynul, evilsephiroth">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmcswift2"/>
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>VVVVID Kodi Addon</summary>
+        <description>Watch easly your favourite VVVID content, VVVID is a project originally started by evilsephiroth, edited by cttynul to make it back working.[CR]I don't own any VVVVID Trademark and this addon is not affiliated with content provier.[CR]Version naming: Major Release.Last Kodi Build Tested.Minor Release, i.e. 1.18.1 means it has been tested on Kodi 18.</description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+        <source>https://github.com/evilsephiroth</source>
+		<website>https://github.com/evilsephiroth</website>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon
+  id="program.amrinstaller"
+  version="1.16.2"
+  name="Installer"
+  provider-name="cttynul">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+   <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AMR Installer download and install a couple of addon for you.</summary>
+    <description lang="en">Download and install addon, module and repositories from official sources and git reporistories.</description>
+    <disclaimer lang="en">Addons copyrights go to respective developers</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.xbmcttynul" name="XBMCttynul Repository" version="1.18.2" provider-name="cttynul">
+    <extension point="xbmc.addon.repository" name="XBMCttynul Repository">
+      <dir>
+            <info compressed="false">https://raw.githubusercontent.com/cttynul/xbmcttynul/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/cttynul/xbmcttynul/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/cttynul/xbmcttynul/master/_repo/</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https://github.com/kodiondemand/repo/raw/master/addons.xml</info>
+            <checksum>https://github.com/kodiondemand/repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/kodiondemand/repo/raw/master</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+            <checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+      </dir>
+      <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+      </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Install all addons developed and provided by cttynul</summary>
+        <description>All addons you can download here are developed, forked, or contribueted by cttyul, utilities and dipendecies included, they are directly linked to official developer repository (TVA Resolvers and JSergio).</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
