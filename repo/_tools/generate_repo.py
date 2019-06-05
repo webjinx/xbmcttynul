@@ -122,7 +122,8 @@ class Generator:
                 os.makedirs(self.output_path + addonid)
          
             if os.path.isfile(self.output_path + addonid + os.path.sep + filename):
-                os.rename(self.output_path + addonid + os.path.sep + filename, self.output_path + addonid + os.path.sep + filename + "." + datetime.datetime.now().strftime("%Y%m%d%H%M%S") )
+                os.remove(self.output_path + addonid + os.path.sep + filename)
+                #os.rename(self.output_path + addonid + os.path.sep + filename, self.output_path + addonid + os.path.sep + filename + "." + datetime.datetime.now().strftime("%Y%m%d%H%M%S") )
             shutil.move(filename, self.output_path + addonid + os.path.sep + filename)
         except Exception, e:
             print e
