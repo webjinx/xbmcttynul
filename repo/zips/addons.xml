@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.f4mTester" name="F4M Proxy" version="3.5.0" provider-name="cttynul, Shani">
+<addon id="plugin.video.f4mTester" name="F4M Proxy" version="3.5.2" provider-name="cttynul, Shani">
     <requires>
 	<import addon="script.module.requests" />
         <import addon="xbmc.python" version="2.1.0"/>

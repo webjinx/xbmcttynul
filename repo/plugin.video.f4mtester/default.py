@@ -149,6 +149,14 @@ def getUrl(url, cookieJar=None,post=None,referer=None,isJsonPost=False, acceptse
     response.close()
     return link
    
+def keyboard_user(msg="", autocomplete=""):
+    text_input = None
+    if not text_input:
+        keyboard = xbmc.Keyboard(autocomplete, msg)
+        keyboard.doModal()
+        if keyboard.isConfirmed():
+            text_input = keyboard.getText()
+return text_input
     
 def GUIEditExportName(name):
 
@@ -177,6 +185,19 @@ if mode ==None:
     liz=xbmcgui.ListItem(b.b64decode("Q29kZWQgYnkgU2hhbmkgZWRpdGVkIGJ5IGN0dHludWwuIEVuam95IDop"),iconImage="", thumbnailImage=__icon__)
     liz.setInfo( type="Video", infoLabels={ "Title": b.b64decode("Q29kZWQgYnkgU2hhbmkgZWRpdGVkIGJ5IGN0dHludWwuIEVuam95IDop")} )
     xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]), url=sys.argv[0] + "?" + urllib.urlencode({'mode':'quit'}), listitem=liz, isFolder=False, )
+
+elif mode == "custom_url":
+    # Insert stream type [TSDOWNLOADER|HLSRETRY|SIMPLE]
+    # Insert your URL here:
+    url = keyboard_user("Insert your URL")
+    name = keyboard_user("Insert your channel name", "F4MChannel")
+    streamtype = keyboard_user("Insert stream type [TSDOWNLOADER|HDS|HLSRETRY|SIMPLE]", "HDS")
+    if not name in ['Custom','TESTING not F4M'] :
+        playF4mLink(url,name, proxy_string, proxy_use_chunks,auth_string,streamtype,setResolved,swf , callbackpath, callbackparam,iconImage)
+    else:
+        listitem = xbmcgui.ListItem( label = str(name), iconImage = "DefaultVideo.png", thumbnailImage = xbmc.getInfoImage( "ListItem.Thumb" ), path=url )
+        xbmc.Player().play( url,listitem)
+
 
 elif mode == "quit":
     exit()
