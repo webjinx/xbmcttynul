@@ -156,7 +156,7 @@ def keyboard_user(msg="", autocomplete=""):
         keyboard.doModal()
         if keyboard.isConfirmed():
             text_input = keyboard.getText()
-return text_input
+    return text_input
     
 def GUIEditExportName(name):
 
