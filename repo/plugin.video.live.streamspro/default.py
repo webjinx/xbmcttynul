@@ -603,12 +603,14 @@ except: regexs=None
 try: playitem=urllib.unquote_plus(params["playitem"])
 except: playitem=''
    
-_core.addon_log("Mode: "+str(mode))
+try: _core.addon_log("Mode: "+str(mode))
+except: pass
 
 if not url is None:
     _core.addon_log("URL: "+str(url.encode('utf-8')))
-_core.addon_log("Name: "+str(name))
-
+try: _core.addon_log("Name: "+str(name))
+except: pass
+    
 if not playitem =='':
     s=_core.getSoup('',data=playitem)
     name,url,regexs=_core.getItems(s,None,dontLink=True)

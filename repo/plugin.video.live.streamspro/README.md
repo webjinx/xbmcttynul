@@ -5,7 +5,7 @@ This can just do what Live Streams Pro could do, but with some new cool features
 
 If you are a developer **don't fork and rename** but, please, **open a [pull request](https://github.com/cttynul/plugin.video.live.streamspro/pulls)** if everything is working like a charm it will be accepted and I will credit you! 
 
-This fork has been testend on **Kodi Leia 18.2**, btw it should work in any release (Isengard 15+).
+This fork has been testend on **Kodi Leia 18.2**, btw it should work in any release (Isengard 15+), planning to make it work with **Python 3**, if you wanna help you're welcome.
 
 ### Links
 * Can't understand anything? [Check Wiki](https://github.com/cttynul/plugin.video.live.streamspro/wiki)

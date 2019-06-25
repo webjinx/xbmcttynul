@@ -361,6 +361,7 @@ def addSourceWizard():
     
 
 def addSource(url=None, media_type="other", wizard=False):
+	source_url = url
         if wizard is False:
             if addon.getSetting("user_agent") != "" and addon.getSetting("user_agent") != "Default":
                 user_agent = addon.getSetting('user_agent').decode('utf-8')

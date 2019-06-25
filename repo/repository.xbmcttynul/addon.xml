@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.xbmcttynul" name="XBMCttynul Add-on Repository" version="3.18.2" provider-name="cttynul">
+<addon id="repository.xbmcttynul" name="XBMCttynul Add-on Repository" version="4.18.2" provider-name="cttynul">
     <extension point="xbmc.addon.repository" name="XBMCttynul Repository">
       <dir>
             <info compressed="false">https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/addons.xml</info>

@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.cielotv" name="Cielo TV8 Play" version="1.0.0" provider-name="cttynul">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.dateutil" version="2.4.2"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension library="lib" point="xbmc.python.module"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="it_IT">Guarda Cielo, TV8 e Sky TG24 in diretta</summary>
+    <summary lang="en_GB">Watch Cielo, TV8 and Sky TG24 live</summary>
+    <description lang="it_IT">Guarda live in streaming i canali TV di Cielo, TV8 e Sky TG24 direttamente sul tuo mediacenter.[CR]I flussi di streaming potrebbero essere visibili solo dall'Italia.[CR]Default core è un fork dei toolkit di NeverWise</description>
+    <description lang="en_GB">Watch italian TV channels Cielo, TV8 and Sky TG24 in live streaming on your personal mediacenter.[CR]Live Streaming may be avaiable only for italian users.[CR]Default core is a fork of NeverWise toolkit</description>
+    <disclaimer lang="it_IT">I brand e i loghi di Cielo, TV8 e Sky TG 24 appartengono ai rispettivi detentori dei copyright.</disclaimer>
+    <disclaimer lang="en_GB">Cielo, TV8 and Sky TG 24 brands and logos are trademarks licensed by respective owners.</disclaimer>
+    <language>it</language>
+    <license>GNU General Public License Version 3, 29 June 2007</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/cttynul/plugin.video.cielotv</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.dplay" name="Dplay" version="1.0.7" provider-name="NeverWise">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+    <import addon="script.module.neverwise" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="it_IT">Dplay</summary>
+    <summary lang="en_GB">Dplay</summary>
+    <description lang="it_IT">Dplay è un servizio di streaming video che ti consente di guardare gratis e on demand i tuoi programmi preferiti di Real Time, Dmax, DeejayTV, Focus, Giallo, Frisbee e K2 dove vuoi e quando vuoi.[CR][CR]Con il meglio della programmazione dei canali free di Discovery Italia, Dplay porta la TV oltre i soliti schermi.</description>
+    <description lang="en_GB">Dplay is a video streaming service that lets you watch, for free and on demand, your favorite Real Time, Dmax, DeejayTv, Focus, Yellow, Frisbee and K2 programs where you want and when you want.[CR][CR]Featuring the best programming free channels of Discovery Italy, Dplay brings the TV beyond the usual TV screens.</description>
+    <disclaimer lang="it_IT">Alcune parti di questo addon potrebbero non essere legali nel tuo paese di residenza. Si prega di verificare la legislazione in vigore prima di installare.</disclaimer>
+    <disclaimer lang="en_GB">Some parts of this addon may not be legal in your country of residence. Please check with your local laws before installing.</disclaimer>
+    <language>it</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/NeverWise/plugin.video.dplay</source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.f4mTester" name="F4M Proxy" version="3.5.4" provider-name="cttynul, Shani">
     <requires>
 	<import addon="script.module.requests" />
@@ -17,7 +70,7 @@
 
 <addon id="plugin.video.live.streamspro"
        name="Live Streams Pro +"
-       version="3.5.6"
+       version="3.5.7"
        provider-name="cttynul, Shani, divingmule">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -46,6 +99,68 @@
         For more info check documentation page at url: -- soon there will be something here --
     </description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.mediasetplay" name="Mediaset Play" version="1.2.2" provider-name="kodi-bino, cttynul">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.1" />
+        <import addon="inputstream.adaptive" version="2.0.19" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="main.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Mediaset Play</summary>
+		<description lang="en">This plugin allow to browse and watch videos from Mediaset Play website</description>
+        <summary lang="it">Mediaset Play</summary>
+		<description lang="it">Questo plugin permette di sfogliare e visualizzare i video presenti sul sito di Mediaset Play</description>
+		<license>GNU General Public License, v2</license>
+		<language>it</language>
+		<source>https://github.com/kodi-bino/plugin.video.mediasetplay</source>
+		<website>Kodi.tv</website>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+		<news>1.2.0 - 21/12/2018
+- Cambiato approccio per canali Live (i link usati in precedenza non ritornano ora 404), i nuovi link sembrano bloccati dall'estero
+
+1.2.1 - 02/01/2019
+- Fix riproduzione video su Android con versioni di Kodi superiori alla 17 (ora utilizza InputStreamAdactive sempre su Android)
+
+1.2.2 - 11/06/2019
+- Aggiunta compatibilita' Python 3 e retrocompatibilita' Python 2.
+        </news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.raitv"
+       name="Rai Play"
+       version="3.0.0"
+       provider-name="Nightflyer, cttynul">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <!--<import addon="script.common.plugin.cache" version="0.9.1"/>-->
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video audio</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>it</language>
+    <platform>all</platform>
+    <summary lang="it">I programmi delle reti Rai e i servizi interattivi</summary>
+    <description lang="it">I canali radio e tv in diretta, gli ultimi 7 giorni di programmazione, le puntate integrali, i telegiornali.</description>
+    <summary lang="en">The broadcasts of Rai channels and its interactive services</summary>
+    <description lang="en">The live radio and TV channels, the latest 7 days of programming, the broadcast archive, the news.</description>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=155922</forum>
+    <website>https://github.com/nightflyer73/plugin.video.raitv</website>
+    <email></email>
+    <source>https://github.com/nightflyer73/plugin.video.raitv</source>
   </extension>
 </addon>
 
@@ -86,6 +201,19 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
+</addon>
+
+<addon id="repository.jsergio" name="jsergio repo" version="1.0.4" provider-name="jsergio">
+	<extension point="xbmc.addon.repository" name="jsergio repo">
+        <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo for jsergio Add-ons</summary>
+		<description>Repo for jsergio Add-ons</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.papaprdelle" name="Pappardelle Add-on Repository" version="1.18.2" provider-name="cttynul">
@@ -138,7 +266,7 @@
     </extension>
 </addon>
 
-<addon id="repository.xbmcttynul" name="XBMCttynul Add-on Repository" version="3.18.2" provider-name="cttynul">
+<addon id="repository.xbmcttynul" name="XBMCttynul Add-on Repository" version="4.18.2" provider-name="cttynul">
     <extension point="xbmc.addon.repository" name="XBMCttynul Repository">
       <dir>
             <info compressed="false">https://github.com/cttynul/xbmcttynul/raw/master/repo/zips/addons.xml</info>
